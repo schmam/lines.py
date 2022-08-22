@@ -1,4 +1,5 @@
-# lines.py - Counts number of lines in source code, excluding blank lines and lines that begin with a # sign. Runs from the command line, e.g., lines.py program_to_count.py
+# lines.py - Counts number of lines in source code, excluding blank lines and lines that begin with a # sign.
+# Runs from the command line, e.g., lines.py example.py
 
 import sys                      # needed for argv and exit
 
