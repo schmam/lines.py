@@ -1,5 +1,4 @@
-# lines.py - Counts number of lines in source code, excluding blank lines and lines that begin with a # sign.
-# Runs from the command line, e.g., lines.py example.py
+# lines.py - Counts number of lines in source code, excluding blank lines and lines that begin with a # sign. Runs from the command line, e.g., lines.py program_to_count.py
 
 import sys                      # needed for argv and exit
 
@@ -29,9 +28,10 @@ def count_lines(s):
         for line in file:
             if line.strip().startswith("#"):            # if line starts with "#" sign, add 1 to commented_lines counter
                 commented_lines += 1
-                print("found line starting with #")
+                program_lines +=1
             elif len(line.strip()) == 0:                # if line length = 0 after stripping white space, add 1 to blank_lines counter
                 blank_lines += 1
+                program_lines +=1
                 print("found blank line")
             else:
                 program_lines +=1
